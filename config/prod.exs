@@ -15,6 +15,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :chat, ChatWeb.Endpoint,
   load_from_system_env: true,
+  http: [port: {:system, "PORT"}],
   url: [scheme: "https", host: "phxchat1.herokuapp.com", port: 443],
   # port: System.get_env("PORT")], # Heroku Supplies the TCP Port
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
@@ -26,7 +27,6 @@ config :logger, level: :debug
 
 # Configure your database
 config :chat, Chat.Repo,
-  adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true

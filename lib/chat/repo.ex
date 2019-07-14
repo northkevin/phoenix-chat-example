@@ -1,5 +1,7 @@
 defmodule Chat.Repo do
-  use Ecto.Repo, otp_app: :chat
+  use Ecto.Repo,
+    otp_app: :chat,
+    adapter: Ecto.Adapters.Postgres
 
   @doc """
   Dynamically loads the repository url from the
