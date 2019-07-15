@@ -1,3 +1,7 @@
+# northkevin/fork builds
+
+[![Build Status](https://travis-ci.com/northkevin/phoenix-chat-example.svg?branch=master)](https://travis-ci.com/northkevin/phoenix-chat-example)
+
 # Phoenix Chat Example
 
 ![phoenix-chat-logo](https://user-images.githubusercontent.com/194400/39481553-c448aa1c-4d63-11e8-9389-47789833a96e.png)
